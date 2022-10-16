@@ -3,6 +3,7 @@ module.exports = {
     "../src/**/*.stories.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)",
     "../src/components/**/stories.@(js|jsx|ts|tsx)",
+    "../src/pages/**/stories.@(js|jsx|ts|tsx)",
   ],
   addons: [
     "@storybook/addon-links",
@@ -15,6 +16,7 @@ module.exports = {
   },
   features: {
     storyStoreV7: true,
+    interactionsDebugger: true,
   },
   viteFinal: (config, { configType }) => {
     if (configType === "PRODUCTION") {
